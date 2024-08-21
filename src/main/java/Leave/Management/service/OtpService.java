@@ -3,7 +3,6 @@ package Leave.Management.service;
 import Leave.Management.dto.AccountCreationRequest;
 import Leave.Management.dto.OtpRequest;
 import Leave.Management.entity.OtpEntity;
-import Leave.Management.entity.Status;
 import Leave.Management.repository.OtpRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;
