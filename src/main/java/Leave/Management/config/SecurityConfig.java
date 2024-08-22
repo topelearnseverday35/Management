@@ -22,7 +22,7 @@ import org.springframework.security.web.session.HttpSessionEventPublisher;
 @RequiredArgsConstructor
 @EnableMethodSecurity
 public class SecurityConfig {
-    private final UserRepository userRepository;
+    final UserRepository userRepository;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
