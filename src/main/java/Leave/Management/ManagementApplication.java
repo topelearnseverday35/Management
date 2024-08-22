@@ -10,5 +10,4 @@ public class ManagementApplication {
 		SpringApplication.run(ManagementApplication.class, args);
 
 	}
-
 }
