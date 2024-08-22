@@ -59,8 +59,8 @@ public class SecurityConfig {
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(form -> form
                         .loginPage("/api/v1/Leave-Management/LogIn")
-                        .successHandler(successHandler))
-                       .csrf().disable();
+                        .successHandler(successHandler));
+
 
 
         return http.build();
