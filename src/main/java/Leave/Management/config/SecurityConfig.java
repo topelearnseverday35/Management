@@ -50,10 +50,10 @@ public class SecurityConfig {
         successHandler.setDefaultTargetUrl("/");
 
         http.authorizeRequests(authorizeRequests -> authorizeRequests
-                        .requestMatchers("/api/v1/Leave-Management/create-Account").permitAll()
-                        .requestMatchers("/api/v1/Leave-Management/LogIn").permitAll()
-                        .requestMatchers("/api/v1/Leave-Management/LogOut").permitAll()
-                        .requestMatchers("/api/v1/Leave-Management/verify-Email").permitAll()
+                        .requestMatchers("*/api/v1/Leave-Management/create-Account").permitAll()
+                        .requestMatchers("*/api/v1/Leave-Management/LogIn").permitAll()
+                        .requestMatchers("*/api/v1/Leave-Management/LogOut").permitAll()
+                        .requestMatchers("*/api/v1/Leave-Management/verify-Email").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .httpBasic(Customizer.withDefaults())
